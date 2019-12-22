@@ -1,0 +1,5 @@
+<!doctype html>
+
+{% for todo in list %}
+<li><a href="{{ url_for('getItem', id=todo['id']) }}">{{ todo['title'] }}</a>
+{% endfor %}
